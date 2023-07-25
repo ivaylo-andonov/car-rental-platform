@@ -16,6 +16,12 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 Follow `.env.example` file to understand what env variables you need to add in `.env` file locally.
 
+## Preview
+
+<img width="1431" alt="Screenshot 2023-07-25 at 11 27 19" src="https://github.com/ivaylo-andonov/car-rental-platform/assets/10476819/22e843d2-e8ab-4adb-8120-66c75293b73b">
+<img width="1421" alt="Screenshot 2023-07-25 at 11 27 38" src="https://github.com/ivaylo-andonov/car-rental-platform/assets/10476819/bb6e5dcf-f252-44d6-83ad-fdf23ccf8840">
+<img width="1422" alt="Screenshot 2023-07-25 at 11 28 30" src="https://github.com/ivaylo-andonov/car-rental-platform/assets/10476819/7d12b018-64bf-4492-9bc6-2ea5f0c2e505">
+
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:
