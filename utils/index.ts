@@ -1,13 +1,11 @@
 import { FilterProps } from '@/app/page';
+import { config } from '../config'
 import axios from 'axios';
 
 const {
   RAPID_API_KEY,
   RAPID_API_HOST,
-  RAPID_API_CARS_BASE_URL,
-  NEXT_PUBLIC_IMAGIN_API_URL,
-  NEXT_PUBLIC_IMAGIN_API_KEY,
-  IMAGIN_API_URL
+  RAPID_API_CARS_BASE_URL
 } = process.env;
 
 export interface CarReadModel {
@@ -66,11 +64,11 @@ export const calculateCarRent = (city_mpg: number, year: number) => {
 };
 
 export const generateCarImageUrl = (car: CarReadModel, angle?: string) => {
-  const url = new URL("https://cdn.imagin.studio/getimage");
+  const url = new URL(config.NEXT_PUBLIC_IMAGIN_API_URL);
   const { make, model, year } = car;
 
 
-  url.searchParams.append('customer', 'hrjavascript-mastery');
+  url.searchParams.append('customer', config.NEXT_PUBLIC_IMAGIN_API_KEY);
   url.searchParams.append('make', make);
   url.searchParams.append('modelFamily', model.split(" ")[0]);
   url.searchParams.append('zoomType', 'fullscreen');
